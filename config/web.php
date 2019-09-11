@@ -11,12 +11,11 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
-    'defaultRoute' => 'qr/equipment/list',
-
+    'defaultRoute' => 'frontend/auth/index',
 
     'language' => 'zh-CN',
 
-    'module' => [
+    'modules' => [
         'backend' => [
             'class' => 'app\modules\backend\BackendModule'
         ],
@@ -37,7 +36,7 @@ $config = [
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'frontend/auth/error',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
